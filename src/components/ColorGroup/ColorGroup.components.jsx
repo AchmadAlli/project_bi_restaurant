@@ -2,17 +2,21 @@ import React from 'react';
 import ColorItem from '../ColorItem/ColorItem.components';
 import { Wrapper } from './ColorGroup.styles'
 
-const ColorInformation = ({data}) => {
-  
+const ColorGroup = ({data, isMixSize}) => {
+  let colorBoxSize = 130;
+
   return (
-    <Wrapper>
+    <Wrapper isMixSize>
       {
         data.map(
-          (colorItem, index) => <ColorItem key={index} {...colorItem} />
+          (colorItem, index) => { 
+            let size = isMixSize ? colorBoxSize - (index * 10) : colorBoxSize;
+            return <ColorItem key={index} {...colorItem} size={size} />
+          } 
         )
       }
     </Wrapper>
   )
 }
 
-export default ColorInformation;
+export default ColorGroup;

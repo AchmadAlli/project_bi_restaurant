@@ -4,9 +4,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 140px;
+  justify-content: flex-end;
   padding: 10px;
-  margin: 0 6px;
+  margin: 0 6px 30px;
   text-align: center;
 
 
@@ -25,8 +25,8 @@ export const Wrapper = styled.div`
 `;
 
 export const ColorBox = styled.div`
-  height: 130px;
-  width: 130px;
+  height: ${props => props.size}px;
+  width: ${props => props.size}px;
   margin-bottom: 20px;
   background: ${ props => props.code };
   border-radius: 4px;
