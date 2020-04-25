@@ -8,8 +8,8 @@ const ColorItem = ({name, code, size}) => {
         code={ code } 
         size={size} 
       />
-      <h4> { name } </h4>
-      <h4> HEX { code } </h4>
+      <h5> { name } </h5>
+      <h5> HEX { code } </h5>
     </Wrapper>
   )
 }

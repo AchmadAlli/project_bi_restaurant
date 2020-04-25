@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavigationItem from '../NavigationItem/NavigationItem.component';
+import ParadiseLogo from '../../assets/img/logo_paradise.png';
 import { Wrapper } from './navigation.styles';
 import { ReactComponent as HomeIcon } from '../../assets/img/navigation_icon/home.svg';
 import { ReactComponent as SunriseIcon } from '../../assets/img/navigation_icon/sunrise.svg';
@@ -11,6 +12,7 @@ class Navigation extends Component {
   render(){
     return (
       <Wrapper>
+        <img src={ParadiseLogo} alt="paradise_logo"/>
         <NavigationItem 
           name='Home'
           link='/'

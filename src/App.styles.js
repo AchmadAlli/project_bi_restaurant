@@ -21,16 +21,21 @@ export const ContentWrapper = styled.div`
 `;
 
 export const NavigationWrapper = styled.div`
+  position: relative;
+  min-width: 240px;
   max-width: 240px;
 
   & img{
     max-width: calc(100% - 56px);
     margin: 10px 24px;
   }
+
+  @media(max-width: 767px){
+    display: none;
+  }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
 `;

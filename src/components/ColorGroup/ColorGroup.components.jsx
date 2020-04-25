@@ -6,7 +6,7 @@ const ColorGroup = ({data, isMixSize}) => {
   let colorBoxSize = 130;
 
   return (
-    <Wrapper isMixSize>
+    <Wrapper isMixSize={isMixSize}>
       {
         data.map(
           (colorItem, index) => { 

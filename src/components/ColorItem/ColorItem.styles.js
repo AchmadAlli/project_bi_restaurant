@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding: 10px;
-  margin: 0 6px 30px;
+  margin: 0 6px 10px;
   text-align: center;
 
 
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     margin-right: 0
   }
 
-  & h4{
+  & h5{
     margin: 0 0 10px;
     color: #4A4A4A
   }

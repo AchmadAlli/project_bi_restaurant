@@ -13,7 +13,6 @@ function App() {
     <BrowserRouter>
       <Wrapper>
         <NavigationWrapper>
-          <img src={ParadiseLogo} alt="paradise_logo"/>
           <Navigation />
         </NavigationWrapper>
         <ContentWrapper>
