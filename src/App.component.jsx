@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './components/Navigation/Navigation.component';
-import ParadiseLogo from './assets/img/logo_paradise.png';
+import MobileNavigation from './components/MobileNavigation/MobileNavigation.component';
 import Home from './pages/Home/Home.component';
 import GettingStarted from './pages/GettingStarted/GettingStarted.component';
 import Foundations from './pages/Foundations/Foundations.component'
@@ -11,6 +11,7 @@ import { ContentWrapper, NavigationWrapper, Wrapper } from './App.styles';
 function App() {
   return (
     <BrowserRouter>
+      <MobileNavigation />
       <Wrapper>
         <NavigationWrapper>
           <Navigation />

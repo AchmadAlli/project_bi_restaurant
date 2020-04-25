@@ -20,7 +20,7 @@ export const Wrapper = styled.li`
   
   & a{
     width: 100%;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0 24px;
     color: ${({isActive}) => (isActive ? '#000' : '#767474')};
     text-decoration: none;
