@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -23,8 +24,8 @@ const NavigationItem = (props) => {
 NavigationItem.propTypes = {
   name: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  icon: PropTypes.elementType.isRequired,
-  location: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
 };
 
 export default withRouter(NavigationItem);
