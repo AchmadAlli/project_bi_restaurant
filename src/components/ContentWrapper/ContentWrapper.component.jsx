@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Wrapper from './ContentWrapper.styles';
@@ -11,7 +12,7 @@ const ContentWrapper = ({ children }) => (
 );
 
 ContentWrapper.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.array.isRequired,
 };
 
 export default ContentWrapper;

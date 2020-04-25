@@ -185,3 +185,18 @@ export const roles = [
     description: 'Color for captions or text that requires black on it',
   },
 ];
+
+export const foreground = [
+  {
+    name: 'Black Out',
+    code: '#000000',
+  },
+  {
+    name: 'Black02',
+    code: '#767474',
+  },
+  {
+    name: 'White',
+    code: '#FFFFFF',
+  },
+];
