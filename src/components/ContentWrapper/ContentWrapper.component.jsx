@@ -1,14 +1,17 @@
 import React from 'react';
-import { Wrapper } from './ContentWrapper.styles'
+import PropTypes from 'prop-types';
+import Wrapper from './ContentWrapper.styles';
 
-const ContentWrapper = ({children}) => {
-  return (
-    <Wrapper>
-      {
-        children.map(childrenItem => (childrenItem))
+const ContentWrapper = ({ children }) => (
+  <Wrapper>
+    {
+        children.map((childrenItem) => (childrenItem))
       }
-    </Wrapper>
-  )
-}
+  </Wrapper>
+);
+
+ContentWrapper.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
 export default ContentWrapper;

@@ -1,17 +1,16 @@
 import React from 'react';
 import { ReactComponent as ComingSoon } from '../../assets/img/comingSoon.svg';
 
-const Home = () => {
-  return (
-    <div>
-      <ComingSoon 
-        style={{
-          margin: 'auto',
-          display: 'block'  
-        }} 
-      />
-    </div>
-  )
-}
+const Home = () => (
+  <div>
+    <ComingSoon
+      style={{
+        margin: 'auto',
+        display: 'block',
+        maxWidth: '100%',
+      }}
+    />
+  </div>
+);
 
 export default Home;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ColorRole = styled.div`
+const ColorRole = styled.div`
   display: flex;
   align-items: center;
   padding: 0;
@@ -11,3 +11,5 @@ export const ColorRole = styled.div`
     margin-bottom: 90px;
   }
 `;
+
+export default ColorRole;

@@ -37,5 +37,5 @@ export const NavigationWrapper = styled.div`
   background: #101a21ba;
   z-index: 9999;
 
-  display: ${({isActive}) => (isActive ? 'block' : 'none')}
+  display: ${({ isActive }) => (isActive ? 'block' : 'none')}
 `;
