@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation.component';
 import MobileNavigation from './components/MobileNavigation/MobileNavigation.component';
+import Footer from './components/Footer/Footer.component';
 import Home from './pages/Home/Home.component';
 import GettingStarted from './pages/GettingStarted/GettingStarted.component';
 import Foundations from './pages/Foundations/Foundations.component';
@@ -25,6 +26,7 @@ function App() {
           </Switch>
         </ContentWrapper>
       </Wrapper>
+      <Footer />
     </BrowserRouter>
   );
 }

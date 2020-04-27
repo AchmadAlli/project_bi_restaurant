@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 10px;
+  padding: 0 10px 10px;
   margin: 0 50px;
 
   &:first-child{

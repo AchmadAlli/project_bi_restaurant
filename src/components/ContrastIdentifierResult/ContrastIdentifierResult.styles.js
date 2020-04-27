@@ -24,7 +24,7 @@ export const Color = styled.div`
 
   & span{
     margin: auto;
-    font-size: 1.2em;
+    font-size: ${(props) => (props.size === 'small' ? '1em' : '1.3em')};
     color: ${(props) => props.foreground}
   }
 `;

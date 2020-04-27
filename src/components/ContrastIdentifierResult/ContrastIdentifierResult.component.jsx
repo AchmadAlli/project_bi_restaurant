@@ -10,10 +10,14 @@ const ContrastIdentifierResult = ({ foreground, background, size }) => {
 
   return (
     <Wrapper>
-      <Color foreground={foreground} colorCode={background}>
+      <Color
+        foreground={foreground}
+        colorCode={background}
+        size={size}
+      >
         <span> Aa </span>
       </Color>
-      <Result>{`1 : ${getRatio(foreground, background)}`}</Result>
+      <Result>{`${getRatio(foreground, background)} : 1`}</Result>
       <Result status={colorContrastResult}>{colorContrastResult ? 'Pass' : 'Fail'}</Result>
     </Wrapper>
   );

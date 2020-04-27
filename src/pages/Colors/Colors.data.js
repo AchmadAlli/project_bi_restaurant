@@ -122,7 +122,7 @@ export const shades = [
     },
     {
       name: 'RRed04',
-      code: '#dc102e',
+      code: '#DC9EA7',
     },
     {
       name: 'RRed05',

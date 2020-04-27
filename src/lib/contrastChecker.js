@@ -1,5 +1,5 @@
+// https://www.npmjs.com/package/tinycolor2
 const tinycolor = require('tinycolor2');
-// https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js
 
 const roundTo = (n, digits = 0) => {
   const multiplicator = 10 ** digits;
