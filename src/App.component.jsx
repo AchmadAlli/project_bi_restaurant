@@ -10,6 +10,8 @@ import ComponentPage from './pages/ComponentPage/ComponentPage.component';
 import { ContentWrapper, NavigationWrapper, Wrapper } from './App.styles';
 
 function App() {
+  const a = document.getElementById('Colors_3');
+  console.log(a, 'test');
   return (
     <BrowserRouter>
       <MobileNavigation />

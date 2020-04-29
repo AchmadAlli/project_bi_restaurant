@@ -41,7 +41,7 @@ export const FooterLink = styled(Link)`
 `;
 
 export const Legal = styled.p`
-  margin: 32px 0 0;
+  margin: 24px 0 0;
   font-size: .9em;
   color: #4A4A4A;
 `;

@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 const Wrapper = styled.li`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  height: 56px;
+  min-height: 36px;
+  padding: 10px 0;
   font-weight: ${({ isActive }) => (isActive ? '500' : 'normal')};
   background: ${({ isActive }) => (isActive ? '#F4F4F4' : 'white')};
 
@@ -19,6 +21,7 @@ const Wrapper = styled.li`
   }
   
   & a{
+    flex: 0 0 100%;
     width: 100%;
     font-size: 1em;
     margin: 0 24px;

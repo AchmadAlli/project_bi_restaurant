@@ -5,6 +5,7 @@ export const ContentWrapper = styled.div`
   width: 100%;
   margin: 50px auto 0;
   padding: 0 24px;
+  min-height: calc(100vh - 220px);
 
   @media(min-width: 1440px){
     max-width: 1600px;

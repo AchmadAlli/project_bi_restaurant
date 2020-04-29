@@ -12,7 +12,7 @@ class ColorContrast extends Component {
     super(props);
 
     this.state = {
-      selectedColor: '',
+      selectedColor: '#00AEEF',
     };
   }
 
