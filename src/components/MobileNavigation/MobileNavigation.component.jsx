@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../Navigation/Navigation.component';
-import ParadiseIcon from '../../assets/img/logo_paradise.png';
+import LogoProject from '../../assets/img/logo.png';
 import { ReactComponent as MenuIcon } from '../../assets/img/navigation_icon/menu.svg';
 import { Header, NavigationWrapper } from './MobileNavigation.styles';
 
@@ -25,7 +25,7 @@ export default class MobileNavigation extends Component {
       <>
         <Header>
           <MenuIcon onClick={() => this.handleNavigation()} />
-          <img src={ParadiseIcon} alt="paradise_icon" />
+          <img src={LogoProject} alt="paradise_icon" />
         </Header>
         <NavigationWrapper
           isActive={isActive}

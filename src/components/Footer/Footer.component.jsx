@@ -1,16 +1,11 @@
 import React from 'react';
 import {
-  Wrapper, FooterLink, Legal, LinkGroup,
+  Wrapper, Legal,
 } from './Footer.styles';
 
 const Footer = () => (
   <Wrapper>
-    <LinkGroup>
-      <FooterLink to="/"> Get Started </FooterLink>
-      <FooterLink to="/"> Fuondations </FooterLink>
-      <FooterLink to="/"> Components </FooterLink>
-    </LinkGroup>
-    <Legal> 2020 Come Indonesia. All Rights Reserved. </Legal>
+    <Legal> 2020 Achmad Ali Baidlowi. All Rights Reserved. </Legal>
   </Wrapper>
 );
 

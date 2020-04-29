@@ -8,15 +8,15 @@ const Wrapper = styled.li`
   min-height: 36px;
   padding: 10px 0;
   font-weight: ${({ isActive }) => (isActive ? '500' : 'normal')};
-  background: ${({ isActive }) => (isActive ? '#F4F4F4' : 'white')};
+  background: ${({ isActive }) => (isActive ? '#333333' : '#242423')};
 
   &:hover{
     & a {
-      color: #000;
+      color: #FFFFFF;
     }
 
     & svg{
-      fill: #00AEEF;
+      fill: #FFFFFF;
     }
   }
   
@@ -25,12 +25,12 @@ const Wrapper = styled.li`
     width: 100%;
     font-size: 1em;
     margin: 0 24px;
-    color: ${({ isActive }) => (isActive ? '#000' : '#767474')};
+    color: ${({ isActive }) => (isActive ? '#FFFFFF' : '#767474')};
     text-decoration: none;
   }
 
   & svg{
-    fill: ${({ isActive }) => (isActive ? '#00AEEF' : '#93D2EA')};
+    fill: ${({ isActive }) => (isActive ? '#FFFFFF' : '#767474')};
     height: 18px;
     width: 18px;
     margin-right: 1rem;

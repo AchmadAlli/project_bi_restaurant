@@ -7,11 +7,12 @@ export const Wrapper = styled.ul`
   list-style-type: none;
   padding-inline-start: 0;
   margin-top: 0;
-  background: white;
+  background: #242423;
 `;
 
 export const Logo = styled.img`
   max-width: 100%;
+  margin-bottom: 30px !important;
 
   @media(max-width: 767px){
     max-width: 60%;
