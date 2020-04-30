@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   width: calc(100% - 240px);
   margin-left: auto;
   padding: 24px 0;
-  background: #EAEAEA;
+  background: #F4F4F4;
   z-index: 9999;
 `;
 

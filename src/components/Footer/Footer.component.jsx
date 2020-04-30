@@ -5,7 +5,7 @@ import {
 
 const Footer = () => (
   <Wrapper>
-    <Legal> 2020 Achmad Ali Baidlowi. All Rights Reserved. </Legal>
+    <Legal> 2020 KB_MANTAB Corp. All Rights Reserved. </Legal>
   </Wrapper>
 );
 

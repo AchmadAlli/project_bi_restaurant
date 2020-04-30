@@ -4,14 +4,12 @@ import Navigation from './components/Navigation/Navigation.component';
 import MobileNavigation from './components/MobileNavigation/MobileNavigation.component';
 import Footer from './components/Footer/Footer.component';
 import Home from './pages/Home/Home.component';
-import GettingStarted from './pages/GettingStarted/GettingStarted.component';
-import Foundations from './pages/Foundations/Foundations.component';
-import ComponentPage from './pages/ComponentPage/ComponentPage.component';
+import Pemasukan from './pages/Pemasukan/Pemasukan.component';
+import Penjualan from './pages/Penjualan/Penjualan.component';
+import Produk from './pages/Produk/Produk.component';
 import { ContentWrapper, NavigationWrapper, Wrapper } from './App.styles';
 
 function App() {
-  const a = document.getElementById('Colors_3');
-  console.log(a, 'test');
   return (
     <BrowserRouter>
       <MobileNavigation />
@@ -22,9 +20,9 @@ function App() {
         <ContentWrapper>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/getting-started" component={GettingStarted} />
-            <Route path="/foundations" component={Foundations} />
-            <Route path="/components" component={ComponentPage} />
+            <Route path="/penjualan" component={Penjualan} />
+            <Route path="/pemasukan" component={Pemasukan} />
+            <Route path="/produk" component={Produk} />
           </Switch>
         </ContentWrapper>
       </Wrapper>

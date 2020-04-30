@@ -3,10 +3,10 @@ import React from 'react';
 import NavigationItem from '../NavigationItem/NavigationItem.component';
 import LogoProject from '../../assets/img/logo.png';
 import { Wrapper, Logo } from './navigation.styles';
-import { ReactComponent as HomeIcon } from '../../assets/img/navigation_icon/home.svg';
-import { ReactComponent as SunriseIcon } from '../../assets/img/navigation_icon/sunrise.svg';
-import { ReactComponent as BookIcon } from '../../assets/img/navigation_icon/book.svg';
-import { ReactComponent as ComponentIcon } from '../../assets/img/navigation_icon/component.svg';
+import { ReactComponent as HomeIcon } from '../../assets/img/navigation_icon/pie.svg';
+import { ReactComponent as Penjualan } from '../../assets/img/navigation_icon/payment.svg';
+import { ReactComponent as Pendapatan } from '../../assets/img/navigation_icon/money.svg';
+import { ReactComponent as Restaurant } from '../../assets/img/navigation_icon/restaurant.svg';
 
 const Navigation = () => (
   <Wrapper>
@@ -17,19 +17,19 @@ const Navigation = () => (
       icon={<HomeIcon />}
     />
     <NavigationItem
-      name="item-1"
+      name="Penjualan"
       link="/getting-started"
-      icon={<SunriseIcon />}
+      icon={<Penjualan />}
     />
     <NavigationItem
-      name="item2"
+      name="Pemasukan"
       link="/foundations"
-      icon={<BookIcon />}
+      icon={<Pendapatan />}
     />
     <NavigationItem
-      name="item3"
+      name="Produk"
       link="/components"
-      icon={<ComponentIcon />}
+      icon={<Restaurant />}
     />
   </Wrapper>
 );

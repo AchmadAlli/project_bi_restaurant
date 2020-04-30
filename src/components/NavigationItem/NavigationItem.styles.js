@@ -31,8 +31,8 @@ const Wrapper = styled.li`
 
   & svg{
     fill: ${({ isActive }) => (isActive ? '#FFFFFF' : '#767474')};
-    height: 18px;
-    width: 18px;
+    height: 24px;
+    width: 24px;
     margin-right: 1rem;
   }
 `;
