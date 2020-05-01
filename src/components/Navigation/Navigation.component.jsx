@@ -18,17 +18,17 @@ const Navigation = () => (
     />
     <NavigationItem
       name="Penjualan"
-      link="/getting-started"
+      link="/penjualan"
       icon={<Penjualan />}
     />
     <NavigationItem
       name="Pemasukan"
-      link="/foundations"
+      link="/pemasukan"
       icon={<Pendapatan />}
     />
     <NavigationItem
       name="Produk"
-      link="/components"
+      link="/produk"
       icon={<Restaurant />}
     />
   </Wrapper>
