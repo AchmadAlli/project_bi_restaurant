@@ -5,11 +5,15 @@ import Card from '../../components/Card/Card.component';
 
 const REVENUE_ANNUAL = 18;
 const REVENUE_MONTHLY = 19;
+const TOTAL_DISH = 30;
+const AVG_ORDERED_MONTHLY = 33;
 
 const Home = () => (
   <Wrapper>
     <Card size="full" questionId={REVENUE_ANNUAL} />
     <Card size="full" questionId={REVENUE_MONTHLY} />
+    <Card size="medium" questionId={TOTAL_DISH} />
+    <Card size="medium" questionId={AVG_ORDERED_MONTHLY} />
   </Wrapper>
 );
 

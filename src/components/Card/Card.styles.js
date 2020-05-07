@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const sizeCoverter = (size) => {
   switch (size) {
     case 'full': return 100;
+    case 'fullOnWrapper': return 100;
     case 'medium': return 46;
     case 'small': return 23;
     default: return 100;
