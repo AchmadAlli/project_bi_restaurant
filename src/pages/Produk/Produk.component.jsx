@@ -38,10 +38,10 @@ class Produk extends Component {
 
   render() {
     const { year, month } = this.state;
-    const PRODUCT_TRANSACTION = 7;
+    const PRODUCT_TRANSACTION = 15;
     const ANNUAL_PRICE = 24;
     const MOST_ORDERED = 31;
-    const MOST_UNORDERED = 5;
+    const MOST_UNORDERED = 32;
     const MONTHLY_REVENUE = 25;
     const AVG_PRODUCT_SALES = 29;
     const TOTAL_PRODUCT_SALES = 26;
@@ -57,7 +57,7 @@ class Produk extends Component {
         />
         <Wrapper>
           <SalesWrapper>
-            <Card size="full" questionId={PRODUCT_TRANSACTION} server="slave" height="870px" />
+            <Card size="full" questionId={PRODUCT_TRANSACTION} height="870px" />
           </SalesWrapper>
           <SalesDetail>
             <Card size="fullOnWrapper" questionId={ANNUAL_PRICE} parameter={this.getParams('year')} />
@@ -66,7 +66,7 @@ class Produk extends Component {
             <Card size="fullOnWrapper" questionId={AVG_PRODUCT_SALES} parameter={this.getParams('all')} />
           </SalesDetail>
           <Card size="medium" questionId={MOST_ORDERED} />
-          <Card size="medium" questionId={MOST_UNORDERED} server="slave" />
+          <Card size="medium" questionId={MOST_UNORDERED} />
         </Wrapper>
       </>
     );
