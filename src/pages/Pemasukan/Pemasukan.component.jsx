@@ -45,7 +45,7 @@ class Pemasukan extends Component {
     return (
       <>
         <Header
-          title="Halaman Produk"
+          title="Halaman Pemasukan"
           year={year}
           month={month}
           handleChange={this.handleSelect}
