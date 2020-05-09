@@ -5,7 +5,7 @@ const sizeCoverter = (size) => {
     case 'full': return 100;
     case 'fullOnWrapper': return 100;
     case 'medium': return 46;
-    case 'small': return 23;
+    case 'small': return 32;
     default: return 100;
   }
 };

@@ -13,7 +13,7 @@ const getHeight = (size) => {
 
 const Card = (props) => {
   const {
-    size, questionId, parameter, server,
+    size, questionId, parameter, server, height,
   } = props;
 
   return (
@@ -26,7 +26,7 @@ const Card = (props) => {
         src={getIframe(questionId, parameter, server)}
         frameBorder="0"
         width="100%"
-        height={getHeight(size)}
+        height={height || getHeight(size)}
       />
     </Wrapper>
   );

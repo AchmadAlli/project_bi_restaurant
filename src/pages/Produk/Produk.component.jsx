@@ -12,6 +12,9 @@ class Produk extends Component {
       year: 2016,
       month: 1,
     };
+
+
+    this.handleSelect = this.handleSelect.bind(this);
   }
 
   getParams(param) {
@@ -41,23 +44,25 @@ class Produk extends Component {
     const MOST_UNORDERED = 5;
     const MONTHLY_REVENUE = 25;
     const AVG_PRODUCT_SALES = 29;
+    const TOTAL_PRODUCT_SALES = 26;
 
 
     return (
       <>
         <Header
-          title="Halaman Produk"
+          title="Halaman Pemasukan"
           year={year}
           month={month}
           handleChange={this.handleSelect}
         />
         <Wrapper>
           <SalesWrapper>
-            <Card size="full" questionId={PRODUCT_TRANSACTION} server="slave" />
+            <Card size="full" questionId={PRODUCT_TRANSACTION} server="slave" height="870px" />
           </SalesWrapper>
           <SalesDetail>
             <Card size="fullOnWrapper" questionId={ANNUAL_PRICE} parameter={this.getParams('year')} />
             <Card size="fullOnWrapper" questionId={MONTHLY_REVENUE} parameter={this.getParams('all')} />
+            <Card size="fullOnWrapper" questionId={TOTAL_PRODUCT_SALES} parameter={this.getParams('all')} />
             <Card size="fullOnWrapper" questionId={AVG_PRODUCT_SALES} parameter={this.getParams('all')} />
           </SalesDetail>
           <Card size="medium" questionId={MOST_ORDERED} />
