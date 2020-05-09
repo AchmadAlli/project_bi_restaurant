@@ -12,7 +12,9 @@ const getHeight = (size) => {
 };
 
 const Card = (props) => {
-  const { size, questionId, parameter } = props;
+  const {
+    size, questionId, parameter, server,
+  } = props;
 
   return (
     <Wrapper size={size}>
@@ -21,7 +23,7 @@ const Card = (props) => {
         style={spinnerSyle}
       />
       <iframe
-        src={getIframe(questionId, parameter)}
+        src={getIframe(questionId, parameter, server)}
         frameBorder="0"
         width="100%"
         height={getHeight(size)}

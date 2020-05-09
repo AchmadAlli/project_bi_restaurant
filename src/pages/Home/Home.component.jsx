@@ -10,10 +10,10 @@ const AVG_ORDERED_MONTHLY = 33;
 
 const Home = () => (
   <Wrapper>
-    <Card size="full" questionId={REVENUE_ANNUAL} />
-    <Card size="full" questionId={REVENUE_MONTHLY} />
-    <Card size="medium" questionId={TOTAL_DISH} />
-    <Card size="medium" questionId={AVG_ORDERED_MONTHLY} />
+    <Card size="full" questionId={REVENUE_ANNUAL} server="master" />
+    <Card size="full" questionId={REVENUE_MONTHLY} server="master" />
+    <Card size="medium" questionId={TOTAL_DISH} server="master" />
+    <Card size="medium" questionId={AVG_ORDERED_MONTHLY} server="master" />
   </Wrapper>
 );
 
