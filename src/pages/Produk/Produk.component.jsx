@@ -10,7 +10,6 @@ class Produk extends Component {
 
     this.state = {
       year: 2016,
-      month: 1,
     };
 
 
@@ -18,26 +17,22 @@ class Produk extends Component {
   }
 
   getParams(param) {
-    const { year, month } = this.state;
+    const { year } = this.state;
     switch (param) {
       case 'year':
         return { year };
-      case 'month':
-        return { month };
-      case 'all':
       default:
-        return { year, month };
+        return { year };
     }
   }
 
   handleSelect(value) {
-    const { year, month } = value[0];
-    const newState = year ? { year } : { month };
-    this.setState(newState);
+    const { year } = value[0];
+    this.setState({ year });
   }
 
   render() {
-    const { year, month } = this.state;
+    const { year } = this.state;
     const PRODUCT_TRANSACTION = 15;
     const ANNUAL_PRICE = 24;
     const MOST_ORDERED = 31;
@@ -52,7 +47,6 @@ class Produk extends Component {
         <Header
           title="Halaman Produk"
           year={year}
-          month={month}
           handleChange={this.handleSelect}
         />
         <Wrapper>

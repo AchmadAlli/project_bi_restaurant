@@ -15,39 +15,34 @@ class Penjualan extends Component {
 
     this.state = {
       year: 2016,
-      month: 1,
     };
 
     this.handleSelect = this.handleSelect.bind(this);
   }
 
   getParams(param) {
-    const { year, month } = this.state;
+    const { year } = this.state;
     switch (param) {
       case 'year':
         return { year };
-      case 'month':
-        return { month };
       case 'all':
       default:
-        return { year, month };
+        return { year };
     }
   }
 
   handleSelect(value) {
-    const { year, month } = value[0];
-    const newState = year ? { year } : { month };
-    this.setState(newState);
+    const { year } = value[0];
+    this.setState({ year });
   }
 
   render() {
-    const { year, month } = this.state;
+    const { year } = this.state;
     return (
       <>
         <Header
           title="Halaman Penjualan"
           year={year}
-          month={month}
           handleChange={this.handleSelect}
         />
         <Wrapper>
@@ -56,7 +51,7 @@ class Penjualan extends Component {
           </SalesWrapper>
           <SalesDetail>
             <Card size="fullOnWrapper" questionId={ANNUAL_PRICE} parameter={this.getParams('year')} />
-            <Card size="fullOnWrapper" questionId={MONTHLY_REVENUE} parameter={this.getParams('all')} />
+            <Card size="fullOnWrapper" questionId={MONTHLY_REVENUE} parameter={this.getParams('year')} />
           </SalesDetail>
         </Wrapper>
       </>

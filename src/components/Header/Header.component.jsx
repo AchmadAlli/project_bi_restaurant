@@ -3,11 +3,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Select from 'react-dropdown-select';
 import { Wrapper, Title, SelectWrapper } from './Header.styles';
-import { yearOptions, monthOptions } from './Header.options';
+import { yearOptions } from './Header.options';
 
 const Header = (props) => {
   const {
-    title, year, month, handleChange,
+    title, year, handleChange,
   } = props;
   return (
     <Wrapper>
@@ -27,19 +27,6 @@ const Header = (props) => {
             />
           )
         }
-        {
-          month && (
-            <Select
-              options={monthOptions}
-              values={[monthOptions.find((option) => option.month === month)]}
-              labelField="name"
-              valueField="month"
-              color="#0074D9"
-              placeholder="Bulan"
-              onChange={(value) => handleChange(value)}
-            />
-          )
-        }
       </SelectWrapper>
     </Wrapper>
   );
@@ -48,7 +35,6 @@ const Header = (props) => {
 Header.propTypes = {
   title: PropTypes.string.isRequired,
   year: PropTypes.number,
-  month: PropTypes.number,
   handleChange: PropTypes.func,
 };
 
